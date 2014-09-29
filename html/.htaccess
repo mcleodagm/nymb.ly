@@ -1,5 +1,0 @@
-# BEGIN (mt) controlled settings
-<IfModule pagespeed_module>
-  ModPagespeed on
-</IfModule>
-# END (mt) controlled settings
