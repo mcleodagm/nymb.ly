@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nymbly, Inc.</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <!-- Styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link rel="stylesheet" href="css/index.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/lib/flexslider.css" type="text/css" media="screen" />
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/lib/animate.css" media="screen, projection">  
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700' rel='stylesheet' type='text/css'>
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="pull_top">
+    <div id="headerInclude"></div>
+    
+    <section id="feature_slider" class="">
+        <!-- 
+            Each slide is composed by <img> and .info
+            - .info's position is customized with css in index.css
+            - each <img> parallax effect is declared by the following params inside its class:
+            
+            example: class="asset left-472 sp600 t120 z3"
+            left-472 means left: -472px from the center
+            sp600 is speed transition
+            t120 is top to 120px
+            z3 is z-index to 3
+            Note: Maintain this order of params
+
+            For the backgrounds, you can combine from the bgs folder :D
+        -->
+        <article class="slide" id="showcasing" style="background: url('img/backgrounds/aqua.jpg') repeat-x top center;">
+            <img class="asset left-100 sp1300 t115 z1" src="img/home/Olivia-iPad.png" />
+            <img class="asset left+150 sp900 t155 z3" src="img/home/MrMen-iPhone.png" />
+            <img class="asset left+225 sp1100 t130 z2" src="img/home/Freckleface-iPad.png" />
+            <div class="info">
+                <h2>
+                	<p id="company-name">nymbly</p>
+                	iOS Integrated Architects
+                </h2>
+            </div>
+        </article>
+       
+        <article class="slide" id="tour" style="background: url('img/backgrounds/aqua.jpg') repeat-x top center;">
+            <img class="asset left-550 sp1300 t100 z3" src="img/home/MacBook-xcode.png" />
+            <div class="info">
+                <h2>Apps from Concept to Construction</h2>
+                <a href="portfolio.html">VIEW PORTFOLIO</a>
+            </div>
+        </article>       
+    </section>
+
+    <div id="features">
+        <div class="container">
+            <div class="section_header">
+                <h3>Our Services</h3>
+            </div> 
+            <div class="row feature">
+                <div class="span6">
+                    <img src="img/home/MonsterMaker_Image_2.jpg" class="img-rounded" />
+                </div>
+                <div class="span6 info">
+                    <h3>
+                        <img src="img/features-ico1.png" />
+                        Expertly Tailored Apps
+                    </h3>
+                    <p>
+                        From your ideas, Nymbly blueprints and builds high-performance, brightly polished Apps for iPhone and iPad. Modern Apps are complex creations with a million moving parts. That’s why we offer a complete start-to-finish solution for each client need, including structural design, programming, UX, graphics, sound effects, animation and quality control. 
+                    </p>
+                    <p>
+                    	Because every bit of the user experience matters, we design and produce premium companion websites. Our App users always feel at home, even on the web. 
+                    </p>
+                </div>
+            </div>
+            <div class="row feature ss">
+                <div class="span6 info">
+                    <h3>
+                        <img src="img/features-ico2.png" />
+                        Partner Level Service
+                    </h3>
+                    <p>
+                        At Nymbly, we look at clients as partners, not customers. As partners, Nymbly senior management is available 24 hours a day, 7 days a week.  Working together, we ensure that sparks are extinguished long before they can become a fire.
+                    </p>
+                </div>
+                <div class="span6">
+                    <img src="img/home/facetime.jpg" class="pull-right" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footerInclude"></div>
+
+    <!-- Scripts -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script> 
+      $('#headerInclude').load('header.html');
+      $('#footerInclude').load('footer.html');
+    </script>
+
+    <script type="text/javascript" src="js/index-slider.js"></script>
+    <script type="text/javascript" src="js/flexslider.js"></script>	
+</body>
+</html>

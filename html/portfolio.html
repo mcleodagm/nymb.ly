@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nymbly, Inc.</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <!-- Styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/isotope.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="css/lib/animate.css" media="screen, projection">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="headerInclude"></div>
+    
+
+    <div id="portfolio">
+        <div class="container">
+            <div class="section_header">
+                <h3>Portfolio</h3>
+            </div>
+             
+            <div class="row">
+                <div class="span12">
+                    <div id="gallery_container">
+                        <div class="photo ipad">
+                            <img src="img/portfolio/olivia_portfolio3.png" class="img-rounded" />
+                            <a href="portfolio-olivia.html" class="mask">
+                                <h3>Olivia Acts Out</h3>
+                                <small>iPad</small>
+                                <div class="more">+</div>
+                            </a>
+                        </div>
+                        <div class="photo iphone">
+                            <img src="img/portfolio/mrmen_med1.png" class="img-rounded" />
+                            <a href="portfolio-mrmen.html" class="mask">
+                                <h3>Mr. Men & Little Miss Sightings</h3>
+                                <small>iPhone</small>
+                                <div class="more">+</div>
+                            </a>
+                        </div>
+                        <div class="photo ipad">
+                            <img src="img/portfolio/freckleface_portfolio4.png" class="img-rounded"/>
+                            <a href="portfolio-freckleface.html" class="mask">
+                                <h3>Freckleface Strawberry Monster Maker</h3>
+                                <small>iPad</small>
+                                <div class="more">+</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+
+    <div id="footerInclude"></div>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+
+    <script type="text/javascript">
+        $(function(){
+
+            var $container = $('#gallery_container'),
+                  $filters = $("#filters a");
+        
+            $container.imagesLoaded( function(){
+                $container.isotope({
+                    itemSelector : '.photo',
+                    masonry: {
+                        columnWidth: 102
+                    }
+                });
+            });
+
+            // filter items when filter link is clicked
+            $filters.click(function() {
+                $filters.removeClass("active");
+                $(this).addClass("active");
+                var selector = $(this).data('filter');
+                $container.isotope({ filter: selector });
+                return false;
+            });
+        
+        
+        });
+    </script>
+    <script> 
+      $('#headerInclude').load('header.html');
+      $('#footerInclude').load('footer.html');
+    </script>
+</body>
+</html>
